@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RockPaper&scissor</title>
+        <link rel="stylesheet" href="style.css">
+       <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="message">Choose An Option</div>
+            <div class="images">
+                <!-- player -->
+                <div class="player">
+                    <img id="user-img" src="./assets/gameImages/stone-Player.png" />
+                </div>
+                <!-- computer -->
+                <div class="computer">
+                    <img id="computer-img" src="./assets/gameImages/stone-Computer.png" />
+                </div>
+            </div>
+            <div class="points">
+                Player <span class="playerPoints">0</span> /
+                <span class="computerPoints">0</span> Computer
+            </div>
+            <div class="options">
+                <button type="button" onclick="play('stone')">STONE</button>
+                <button type="button" onclick="play('paper')">PAPER</button>
+                <button type="button" onclick="play('scissors')">SCISSORS</button>
+            </div>
+        </div>
+        <script src="app.js"></script>
+        <div id="game-banner" class="hidden">Result goes here!</div>
+
+
+    </body>
+</html>

@@ -1,0 +1,252 @@
+body {
+    background-color: #2d2a3d;
+    color: rgb(195, 253, 253);
+    font-family: 'Poppins';
+}
+
+.message {
+    margin: 5cm 0 2cm;
+    text-align: center;
+
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+
+}
+
+.computer img,
+.player img {
+    width: 75%;
+
+}
+
+.points {
+    margin: 2cm 0;
+    text-align: center;
+}
+
+.options {
+    margin-top: 5cm;
+    display: flex;
+    justify-content: space-around;
+}
+
+.options button {
+    background: none;
+    color: rgb(195, 253, 253);
+    font-family: Poppins;
+    border: 1px solid rgb(195, 253, 253);
+    padding: 1cm 2cm;
+    border-radius: 7px;
+    width: 150 px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    transition: 0.4 s all linear;
+}
+
+.options button:hover {
+    background: #595183;
+    border: 1px solid #595183;
+}
+
+.playerPoints {
+    margin-right: 3cm;
+}
+
+.computerPoints {
+    margin-left: 3cm;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* .shakeComputer {
+    animation: shake 1s linear;
+}
+
+.shakePlayer {
+    animation: shake 1s linear;
+} */
+
+/* shaking */
+@keyframes shake_player {
+    0% {
+        transform: rotate(-30deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+     50% {
+        transform: rotate(-30deg);
+    } 75% {
+        transform: rotate(30deg);
+    }
+     100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes shake_computer {
+    0% {
+        transform: rotate(30deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+     50% {
+        transform: rotate(30deg);
+    } 75% {
+        transform: rotate(-30deg);
+    }
+     100% {
+        transform: rotate(0deg);
+    }
+}
+
+.shakePlayer{
+    animation: shake_player 1s linear;
+}
+.shakeComputer{
+    animation: shake_computer 1s linear;
+}
+
+
+
+/* alert */
+#game-banner {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e1e2f; /* softer dark background */
+    color: #647a09; /* light green, not harsh neon */
+    padding: 20px 30px;
+    border: 2px solid #820f96; /* gentler green border */
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    z-index: 9999;
+    animation: blink-border 1s step-end infinite;
+    border-radius: 8px;
+    text-align: center;
+    white-space: pre-line;
+    box-shadow: 0px 0px 8px 1px #9088ff; /* lighter glow */
+}
+
+@keyframes blink-border {
+    50% {
+        border-color: #7259ff;
+        box-shadow: 0px 0px 10px 2px #a40f91;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+body {
+    background-color: #2d2a3d;
+    
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.message {
+    margin: 5cm 0 2cm;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3d89bb;
+    text-shadow: 0 0 5px #18170e;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin: 2rem 0;
+}
+
+.computer img,
+.player img {
+    width: 75%;
+    
+    border-radius: 20px;
+    
+   
+    transition: transform 0.2s ease;
+}
+
+.computer img:hover,
+.player img:hover {
+    transform: scale(1.2);
+}
+
+.points {
+    margin: 2cm 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #62bdd6;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.playerPoints {
+    margin-right: 3cm;
+}
+
+.computerPoints {
+    margin-left: 3cm;
+}
+
+.options {
+    margin-top: 5cm;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Minimal animation (optional) */
+.shakePlayer,
+.shakeComputer {
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+    0% { transform: rotate(-10deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
